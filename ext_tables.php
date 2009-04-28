@@ -15,8 +15,8 @@ $TCA['tx_minicrm_account'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_minicrm_account.gif',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca/tx_minicrm_account.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'files/img/icon_tx_minicrm_account.gif',
 	),
 	'feInterface' => array (
 		'fe_admin_fieldList' => 'hidden, title, notes, payment, segment, address, contact, project',
@@ -36,8 +36,8 @@ $TCA['tx_minicrm_accounttype'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_minicrm_accounttype.gif',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca/tx_minicrm_accounttype.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'files/img/icon_tx_minicrm_accounttype.gif',
 	),
 	'feInterface' => array (
 		'fe_admin_fieldList' => 'hidden, title',
@@ -56,8 +56,8 @@ $TCA['tx_minicrm_notes'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_minicrm_notes.gif',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca/tx_minicrm_notes.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'files/img/icon_tx_minicrm_notes.gif',
 	),
 	'feInterface' => array (
 		'fe_admin_fieldList' => 'hidden, description, payment_behavior, quality, fussy',
@@ -77,8 +77,8 @@ $TCA['tx_minicrm_payment'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_minicrm_payment.gif',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca/tx_minicrm_payment.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'files/img/icon_tx_minicrm_payment.gif',
 	),
 	'feInterface' => array (
 		'fe_admin_fieldList' => 'hidden, title',
@@ -98,8 +98,8 @@ $TCA['tx_minicrm_segment'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_minicrm_segment.gif',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca/tx_minicrm_segment.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'files/img/icon_tx_minicrm_segment.gif',
 	),
 	'feInterface' => array (
 		'fe_admin_fieldList' => 'hidden, title',
@@ -118,8 +118,8 @@ $TCA['tx_minicrm_project'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_minicrm_project.gif',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca/tx_minicrm_project.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'files/img/icon_tx_minicrm_project.gif',
 	),
 	'feInterface' => array (
 		'fe_admin_fieldList' => 'hidden, title, invoiceno, invoicedate, payed, status, products',
@@ -139,8 +139,8 @@ $TCA['tx_minicrm_status'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_minicrm_status.gif',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca/tx_minicrm_status.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'files/img/icon_tx_minicrm_status.gif',
 	),
 	'feInterface' => array (
 		'fe_admin_fieldList' => 'hidden, title',
@@ -160,8 +160,8 @@ $TCA['tx_minicrm_products'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_minicrm_products.gif',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca/tx_minicrm_products.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'files/img/icon_tx_minicrm_products.gif',
 	),
 	'feInterface' => array (
 		'fe_admin_fieldList' => 'hidden, title, productnumber, price, amount, description, description_intern, mails',
@@ -180,8 +180,8 @@ $TCA['tx_minicrm_mails'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_minicrm_mails.gif',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca/tx_minicrm_mails.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'files/img/icon_tx_minicrm_mails.gif',
 	),
 	'feInterface' => array (
 		'fe_admin_fieldList' => 'hidden, title, kind, date, text',

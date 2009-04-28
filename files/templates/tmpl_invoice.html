@@ -1,0 +1,140 @@
+miniCRM HTML Template for selectorbox for invoices
+
+    --- Markers out of the loop ---
+    	--- tt_address fields ---
+	Name of company											###ADDRESS_NAME###
+	Addition to name										###ADDRESS_TITLE###
+	Email													###ADDRESS_EMAIL###
+	Phone Number											###ADDRESS_PHONE###
+	Fax Number												###ADDRESS_FAX###
+	Mobile													###ADDRESS_MOBILE###
+	Homepage address										###ADDRESS_WWW###
+	Street													###ADDRESS_ADDRESS###
+	City													###ADDRESS_CITY###
+	Zip Code												###ADDRESS_ZIP###
+	Region													###ADDRESS_REGION###
+    Country													###ADDRESS_COUNTRY###
+    	--- tx_minicrm_project fields ---
+	Project title											###PROJECT_TITLE###
+	Invoice Number											###PROJECT_INVOICENO###
+	Invoice Date											###PROJECT_INVOICEDATE###
+	Project Description										###PROJECT_DESCRIPTION###
+	Project Startdate										###PROJECT_STARTDATE###
+
+	--- Markers within loop ---
+    	--- tx_minicrm_products fields ---
+    Producttitel											###PRODUCT_TITLE###
+    Productnumber											###PRODUCT_PRODUCTNUMBER###
+    Price													###PRODUCT_PRICE###
+    Price x Amount											###PRODUCT_PRICESUM###
+    Amount													###PRODUCT_AMOUNT###
+    Description												###PRODUCT_DESCRIPTION###
+    Intern Description										###PRODUCT_DESCRIPTION_INTERN###
+    
+
+	GLOBAL MARKERS:
+	Displaying any value from pi1/locallang.xml:			###MINICRM_LL_YOURFIELD### (Could be filled via locallang.xml or typoscript - see manual for details)
+	Displaying any value from typoscript:					###MINICRM_TS_YOURFIELD### (Could be filled via typoscript - see manual for details)
+    
+    
+<!-- ###MINICRM_INVOICE### begin -->
+	<div class="minicrm_print_all">
+    	<div class="minicrm_print_header"></div>
+        <div class="minicrm_print_content">
+        	<div class="minicrm_print_content_inner">
+            	<p>
+                	<strong>YOURNAME</strong><br />
+                    YOURSTREET<br />
+                    YOURADDRESS<br />
+                    YOURPHONE<br />
+                    <span><strong><u>Alexander.Kellner@einpraegsam.net</u></strong></span><br />
+                    additional
+                </p>
+            	<p>
+                	<strong>###ADDRESS_NAME###</strong><br />
+                	<strong>###ADDRESS_TITLE###</strong><br />
+                    ###ADDRESS_ADDRESS###<br />
+                    ###ADDRESS_ZIP### ###ADDRESS_CITY###<br />
+                    ###ADDRESS_COUNTRY###
+                </p>
+                <p style="text-align: right;">Hallerndorf, ###PROJECT_INVOICEDATE###</p>
+                <p><span><strong>Rechnung (Rechnungsnummer ###PROJECT_INVOICENO###)</strong></span></p>
+                <p>Sehr geehrte Damen und Herren,</p>
+                <p>f&uuml;r erbrachte Leistungen vom ###PROJECT_STARTDATE### erlaube ich mir zu berechnen:</p>
+                <p>&nbsp;</p>
+                <table cellpadding="4" cellspacing="0" width="100%">
+                	<tr>
+                    	<td style="border-bottom: 1px solid black;" valign="top"><strong>Stk.</strong></td>
+                    	<td style="border-bottom: 1px solid black;" valign="top"><strong>Artikel / Dienstleistung</strong></td>
+                    	<td style="border-bottom: 1px solid black;" valign="top"><strong>Art-Nr.</strong></td>
+                    	<td style="border-bottom: 1px solid black;" align="right" valign="top"><strong>Einzelpreis</strong></td>
+                    	<td style="border-bottom: 1px solid black;" align="right" valign="top"><strong>Preis</strong></td>
+                    </tr>
+                    <!-- ###CONTENT### --><!-- ###ITEM### -->
+                    	<tr>
+                        	<td valign="top">###PRODUCT_AMOUNT###</td>
+                        	<td valign="top">###PRODUCT_DESCRIPTION###</td>
+                        	<td valign="top">###PRODUCT_PRODUCTNUMBER###</td>
+                        	<td align="right" valign="top">###PRODUCT_PRICE###&nbsp;&euro;</td>
+                        	<td align="right" valign="top">###PRODUCT_PRICESUM###&nbsp;&euro;</td>
+                        </tr>
+                    <!-- ###ITEM### --><!-- ###CONTENT### -->
+                    	<tr>
+                        	<td height="50"></td>
+                        	<td><strong>Summe</strong></td>
+                        	<td></td>
+                        	<td></td>
+                        	<td align="right"><strong>###OVERALL###&nbsp;&euro;</strong></td>
+                        </tr>
+                </table>
+                <p>
+                	Diese Rechnung ist gem&auml;&szlig; § 19 (1) UStG umsatzsteuerfrei.<br />
+                    Gelieferte Ware bleibt bis zur vollst&auml;ndigen Bezahlung Eigentum des Lieferanten.
+                </p>
+                <p>Zahlbar innerhalb 14 Tagen nach Rechnungsdatum.</p>
+                <p>Herzlichen Dank f&uuml;r Ihren Auftrag. Ich stehe f&uuml;r k&uuml;nftige Anfragen jeder Zeit zur Verf&uuml;gung.</p>
+                <p>&nbsp;</p>
+                <p>
+                	Mit freundlichen Gr&uuml;&szlig;en<br />
+                	IMAGEWITHSIGNATURE<br />
+                    Alexander Kellner
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="minicrm_print_footer">
+    	<p style="text-align: center; font-size: 10pt; color: #888;">Bankinformation</p>
+    </div>
+<!-- ###MINICRM_INVOICE### end -->
+
+
+
+
+
+
+miniCRM HTML Template for selectorbox for invoices
+
+    --- Markers out of the loop ---
+	URL to the same page									###TARGET###
+    
+	--- Markers within loop ---
+	Title of each project									###TITLE###
+	UID of each project										###UID####
+    
+
+	GLOBAL MARKERS:
+	Displaying any value from pi1/locallang.xml:			###MINICRM_LL_YOURFIELD### (Could be filled via locallang.xml or typoscript - see manual for details)
+	Displaying any value from typoscript:					###MINICRM_TS_YOURFIELD### (Could be filled via typoscript - see manual for details)
+	
+	
+<!-- ###MINICRM_INVOICESELECT### begin -->
+	<form action="###TARGET###" method="post">
+		<select name="tx_minicrm_pi1[print]" class="minirm_invoice_select" onchange="this.form.submit()">
+			<option>###MINICRM_LL_PLEASECHOOSE###</option>
+			<!-- ###CONTENT### --><!-- ###ITEM### -->
+				<option value="###UID###">###TITLE### (###INVOICENO###)</option>
+			<!-- ###ITEM### --><!-- ###CONTENT### -->
+		</select>
+	</form>
+<!-- ###MINICRM_INVOICESELECT### end -->

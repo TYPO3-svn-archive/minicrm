@@ -1,0 +1,2 @@
+# cat=basic//010; type=int+; label= Store PID: Enter the page id in which your minicrm values are stored (This is used for the backend module)
+storePID = 1

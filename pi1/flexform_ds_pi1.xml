@@ -1,0 +1,42 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<main>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:minicrm/locallang_db.xml:pi_flexform.sheet_main</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<mode>
+						<TCEforms>
+							<label>LLL:EXT:minicrm/locallang_db.xml:pi_flexform.mode</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:minicrm/locallang_db.xml:pi_flexform.mode.0</numIndex>
+										<numIndex index="1">account</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:minicrm/locallang_db.xml:pi_flexform.mode.1</numIndex>
+										<numIndex index="1">project</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:minicrm/locallang_db.xml:pi_flexform.mode.2</numIndex>
+										<numIndex index="1">invoice</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>100</maxitems>
+								<size>3</size>
+								<multiple>1</multiple>
+							</config>
+						</TCEforms>
+					</mode>
+				</el>
+			</ROOT>
+		</main>
+	</sheets>
+</T3DataStructure>

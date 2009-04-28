@@ -1,0 +1,9 @@
+ok tt_address title should allow more characters
+ok fe_users segment (doublicated)
+ok New project won't be shown!?
+Pagebrowser in BE module for all lists
+
+ok Errors:
+Warning: Invalid argument supplied for foreach() in /homepages/38/d70348839/htdocs/typo3_einpraegsam/typo3conf/ext/minicrm/pi1/class.tx_minicrm_pi1_invoice.php on line 93
+Warning: Invalid argument supplied for foreach() in /homepages/38/d70348839/htdocs/typo3_einpraegsam/typo3conf/ext/minicrm/pi1/class.tx_minicrm_pi1_invoice.php on line 100
+Warning: Invalid argument supplied for foreach() in /homepages/38/d70348839/htdocs/typo3_einpraegsam/typo3conf/ext/minicrm/pi1/class.tx_minicrm_pi1_invoice.php on line 105

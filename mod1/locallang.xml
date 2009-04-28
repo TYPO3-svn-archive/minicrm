@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;web_txminicrmM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">miniCRM</label>
+			<label index="account_view">Account list</label>
+			<label index="project_view">Project list</label>
+			<label index="sales_view">Sales statistic</label>
+			<label index="custom_view">Custom lists</label>
+			<label index="text_option">Please choose an option:</label>
+			<label index="noTSconfig">Sorry, there is no custom function added to TSconfig (see manual for details)</label>
+			<label index="custom_noTitle">No title in TSconfig defined (see manual for details)</label>
+			<label index="custom_noSelect">There is no select string in TSconfig (see manual for details)</label>
+			<label index="noEntriesFound">No entries found in the database</label>
+			<label index="Xrows">%d Entries found</label>
+			<label index="fileGenerated">File successfully generated!</label>
+			<label index="fileDownload">Download file</label>
+			<label index="noContent">File has no content</label>
+			<label index="viewAccount_title">Name</label>
+			<label index="viewAccount_quality">Qual.</label>
+			<label index="viewAccount_domain">Domain</label>
+			<label index="viewAccount_email">Email</label>
+			<label index="viewAccount_projecttitle">Project Title</label>
+			<label index="viewAccount_projectnumbers"># Projects</label>
+			<label index="viewAccount_overallsum">Sum overall</label>
+			<label index="viewProject_puid">Project UID</label>
+			<label index="viewProject_ptitle">Project</label>
+			<label index="viewProject_date">Date</label>
+			<label index="viewProject_atitle">Account</label>
+			<label index="viewProject_ino">Invoice No.</label>
+			<label index="viewProject_psum">Project sum</label>
+			<label index="viewProject_payed">Payed?</label>
+			<label index="viewProject_status">Status</label>
+			<label index="viewSales_Date">Invoice Date</label>
+			<label index="viewSales_psum">Project sum</label>
+			<label index="viewSales_ino">Invoice No.</label>
+			<label index="viewSales_ptitle">Project</label>
+			<label index="viewSales_atitle">Account</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="title">miniCRM</label>
+			<label index="account_view">Kundenliste</label>
+			<label index="project_view">Projektliste</label>
+			<label index="sales_view">Umsatz Statistik</label>
+			<label index="custom_view">Eigene Listen</label>
+			<label index="text_option">Bitte Auswahl treffen:</label>
+			<label index="noTSconfig">Es gibt aktuell keine individuellen Listen im TSconfig (siehe Handbuch für Details)</label>
+			<label index="custom_noTitle">Kein Titel im TSconfig definiert (siehe Handbuch für Details)</label>
+			<label index="custom_noSelect">Es wurde kein select Text im TSconfig hinterlegt (siehe Handbuch für Details)</label>
+			<label index="noEntriesFound">Keine Einträge in der Datenbank gefunden</label>
+			<label index="Xrows">%d Einträge gefunden</label>
+			<label index="fileGenerated">Datei erfolgreich erstellt!</label>
+			<label index="fileDownload">Datei herunterladen</label>
+			<label index="noContent">Kein Inhalt für die zu erstellende Datei vorhanden</label>
+			<label index="viewAccount_title">Name</label>
+			<label index="viewAccount_quality">Qual.</label>
+			<label index="viewAccount_domain">Homepage</label>
+			<label index="viewAccount_email">E-Mail</label>
+			<label index="viewAccount_projecttitle">Projekt Name</label>
+			<label index="viewAccount_projectnumbers">Anz. Projekte</label>
+			<label index="viewAccount_overallsum">Übersicht Summe</label>
+			<label index="viewProject_puid">Projektnummer</label>
+			<label index="viewProject_ptitle">Projekt</label>
+			<label index="viewProject_date">Datum</label>
+			<label index="viewProject_atitle">Kunde</label>
+			<label index="viewProject_ino">Rech Nr.</label>
+			<label index="viewProject_psum">Projekt Summe</label>
+			<label index="viewProject_payed">Bereits beglichen?</label>
+			<label index="viewProject_status">Status</label>
+			<label index="viewSales_Date">Rech Datum</label>
+			<label index="viewSales_psum">Projektsumme</label>
+			<label index="viewSales_ino">Rech Nr.</label>
+			<label index="viewSales_ptitle">Projekt</label>
+			<label index="viewSales_atitle">Kunde</label>
+		</languageKey>
+	</data>
+</T3locallang>

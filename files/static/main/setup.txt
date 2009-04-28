@@ -1,0 +1,129 @@
+# miniCRM PLUGIN #
+includeLibs.tx_minicrm_pi1 = EXT:minicrm/pi1/class.tx_minicrm_pi1.php
+includeLibs.minicrm_misc = EXT:minicrm/lib/user_minicrm_misc.php
+page.includeCSS.file3141 = EXT:minicrm/files/css/minicrm_invoice.css
+
+plugin.tx_minicrm_pi1 = USER
+[globalVar = GP:cHash = ]
+plugin.tx_minicrm_pi1 = USER_INT
+[end]
+plugin.tx_minicrm_pi1 {
+	includeLibs < includeLibs.tx_minicrm_pi1
+	userFunc = tx_minicrm_pi1->main
+	
+	# Constants
+	template.list = {$plugin.minicrm.template.list}
+	template.invoice = {$plugin.minicrm.template.invoice}
+	
+	# Print invoices
+	invoice {
+		# stdWrap for fields
+		field {
+			address_name = TEXT
+			address_name.field = address_name
+			
+			address_title = TEXT
+			address_title.field = address_title
+			
+			address_email = TEXT
+			address_email.field = address_email
+			
+			address_phone = TEXT
+			address_phone.field = address_phone
+			
+			address_fax = TEXT
+			address_fax.field = address_fax
+			
+			address_mobile = TEXT
+			address_mobile.field = address_mobile
+			
+			address_www = TEXT
+			address_www.field = address_www
+			
+			address_address = TEXT
+			address_address.field = address_address
+			
+			address_city = TEXT
+			address_city.field = address_city
+			
+			address_zip = TEXT
+			address_zip.field = address_zip
+			
+			address_region = TEXT
+			address_region.field = address_region
+			
+			address_country = TEXT
+			address_country.field = address_country
+			
+			project_title = TEXT
+			project_title.field = project_title
+			
+			project_invoiceno = TEXT
+			project_invoiceno.field = project_invoiceno
+			
+			project_invoicedate = TEXT
+			project_invoicedate.field = project_invoicedate
+			project_invoicedate.strftime = %d. %B %Y
+			
+			project_startdate = TEXT
+			project_startdate.field = project_startdate
+			project_startdate.strftime = %d. %B %Y
+			
+			product_amount = TEXT
+			product_amount.field = product_amount
+			
+			product_description = TEXT
+			product_description.field = product_description
+			
+			product_productnumber = TEXT
+			product_productnumber.field = product_productnumber
+			
+			product_price = USER
+			product_price {
+				userFunc = user_minicrm_misc->minicrm_number_format
+				userFunc {
+					number = TEXT
+					number.field = product_price
+					
+					decimal = 2
+					dec_point = ,
+					thousands_sep = .
+				}
+			}
+			
+			product_pricesum = USER
+			product_pricesum {
+				userFunc = user_minicrm_misc->minicrm_number_format
+				userFunc {
+					number = TEXT
+					number.field = product_pricesum
+					
+					decimal = 2
+					dec_point = ,
+					thousands_sep = .
+				}
+			}
+			
+			overall = USER
+			overall {
+				userFunc = user_minicrm_misc->minicrm_number_format
+				userFunc {
+					number = TEXT
+					number.field = overall
+					
+					decimal = 2
+					dec_point = ,
+					thousands_sep = .
+				}
+			}
+		}
+	}
+	
+}
+
+tt_content.minicrm_pi1 = COA
+tt_content.minicrm_pi1 {
+	10 < lib.stdheader
+	20 < plugin.tx_minicrm_pi1
+}
+tt_content.list.20.minicrm_pi1 < plugin.tx_minicrm_pi1
